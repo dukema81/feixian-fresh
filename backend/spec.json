@@ -1,0 +1,288 @@
+{
+  "brand": {
+    "name": "飞鲜",
+    "full": "飞鲜生鲜电商",
+    "tagline": "产地直发 · 明日鲜达",
+    "port": 8109
+  },
+  "tables": [
+    {
+      "name": "products",
+      "label": "生鲜商品",
+      "fields": [
+        {
+          "name": "title",
+          "label": "商品名",
+          "type": "text"
+        },
+        {
+          "name": "price",
+          "label": "价格(元)",
+          "type": "number"
+        },
+        {
+          "name": "stock",
+          "label": "库存",
+          "type": "int"
+        },
+        {
+          "name": "category",
+          "label": "品类",
+          "type": "text"
+        },
+        {
+          "name": "desc",
+          "label": "溯源/保质期",
+          "type": "text"
+        }
+      ],
+      "seed": [
+        [
+          "丹东草莓 3斤礼盒",
+          89,
+          200,
+          "水果",
+          "产地直发 保质期3天"
+        ],
+        [
+          "宁乡花猪里脊 500g",
+          68,
+          150,
+          "肉禽",
+          "冷链 溯源可查"
+        ],
+        [
+          "云南松茸 500g",
+          168,
+          60,
+          "菌菇",
+          "48h时效 香格里拉直发"
+        ]
+      ]
+    },
+    {
+      "name": "suppliers",
+      "label": "产地供应商",
+      "fields": [
+        {
+          "name": "name",
+          "label": "供应商",
+          "type": "text"
+        },
+        {
+          "name": "origin",
+          "label": "产地",
+          "type": "text"
+        },
+        {
+          "name": "supply",
+          "label": "供货品类",
+          "type": "text"
+        },
+        {
+          "name": "grade",
+          "label": "合作等级",
+          "type": "text"
+        }
+      ],
+      "seed": [
+        [
+          "丹东某草莓合作社",
+          "辽宁丹东",
+          "草莓",
+          "A"
+        ],
+        [
+          "香格里拉菌业",
+          "云南迪庆",
+          "松茸/菌菇",
+          "A"
+        ]
+      ]
+    },
+    {
+      "name": "flash_sales",
+      "label": "限时特卖",
+      "fields": [
+        {
+          "name": "product_id",
+          "label": "商品ID",
+          "type": "int"
+        },
+        {
+          "name": "sale_price",
+          "label": "特卖价(元)",
+          "type": "number"
+        },
+        {
+          "name": "start",
+          "label": "开始",
+          "type": "text"
+        },
+        {
+          "name": "end",
+          "label": "结束",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "label": "状态",
+          "type": "text"
+        }
+      ],
+      "seed": [
+        [
+          1,
+          69,
+          "10-24 20:00",
+          "10-24 22:00",
+          "进行中"
+        ],
+        [
+          3,
+          128,
+          "10-25 12:00",
+          "10-25 14:00",
+          "未开始"
+        ]
+      ]
+    },
+    {
+      "name": "delivery_slots",
+      "label": "配送时段",
+      "fields": [
+        {
+          "name": "slot",
+          "label": "时段",
+          "type": "text"
+        },
+        {
+          "name": "line",
+          "label": "配送线路",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "label": "状态",
+          "type": "text"
+        },
+        {
+          "name": "capacity",
+          "label": "剩余运力",
+          "type": "int"
+        }
+      ],
+      "seed": [
+        [
+          "明日 09:00-11:00",
+          "冷链早班",
+          "可约",
+          80
+        ],
+        [
+          "明日 17:00-19:00",
+          "冷链晚班",
+          "紧张",
+          30
+        ]
+      ]
+    },
+    {
+      "name": "cart",
+      "label": "购物车",
+      "fields": [
+        {
+          "name": "user",
+          "label": "用户",
+          "type": "text"
+        },
+        {
+          "name": "product_id",
+          "label": "商品ID",
+          "type": "int"
+        },
+        {
+          "name": "qty",
+          "label": "数量",
+          "type": "int"
+        }
+      ],
+      "seed": []
+    },
+    {
+      "name": "orders",
+      "label": "订单",
+      "fields": [
+        {
+          "name": "order_no",
+          "label": "订单号",
+          "type": "text"
+        },
+        {
+          "name": "user",
+          "label": "下单人",
+          "type": "text"
+        },
+        {
+          "name": "items",
+          "label": "商品明细",
+          "type": "text"
+        },
+        {
+          "name": "total",
+          "label": "金额(元)",
+          "type": "number"
+        },
+        {
+          "name": "address",
+          "label": "收货地址",
+          "type": "text"
+        },
+        {
+          "name": "status",
+          "label": "状态",
+          "type": "text"
+        }
+      ],
+      "seed": []
+    },
+    {
+      "name": "users",
+      "label": "用户",
+      "fields": [
+        {
+          "name": "username",
+          "label": "用户名",
+          "type": "text"
+        },
+        {
+          "name": "password",
+          "label": "密码",
+          "type": "text"
+        },
+        {
+          "name": "role",
+          "label": "角色",
+          "type": "text"
+        }
+      ],
+      "seed": [
+        [
+          "admin",
+          "admin123",
+          "admin"
+        ],
+        [
+          "ops01",
+          "ops123456",
+          "ops"
+        ],
+        [
+          "view01",
+          "view123456",
+          "viewer"
+        ]
+      ]
+    }
+  ]
+}
