@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f97316">
+<title>飞鲜</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg">
+<link rel="apple-touch-icon" href="icon.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="lg" class="lg-wrap">
+  <form id="lgf" class="lg">
+    <img src="icon.svg" width="76" height="76">
+    <h1>飞鲜</h1>
+    <p>产地直发 · 明日鲜达</p>
+    <input id="lg-u" placeholder="账号" value="admin" autocomplete="username">
+    <input id="lg-p" type="password" placeholder="密码" autocomplete="current-password">
+    <button>登 录</button>
+    <em id="lg-err"></em>
+  </form>
+</div>
+<div id="main" hidden>
+  <header><img src="icon.svg" width="26" height="26"><b>飞鲜</b><span id="pg"></span></header>
+  <section id="view"></section>
+  <nav id="tabs"></nav>
+</div>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
