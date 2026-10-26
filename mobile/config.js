@@ -1,0 +1,2 @@
+window.APP_CONFIG = {"name": "飞鲜", "short": "飞鲜", "key": "feixianfresh", "base": "/xian/", "color": "#f97316", "intro": "产地直发 · 明日鲜达", "user": "admin", "pwd": "admin123"};
+window.TABLE_ICONS = {"products": "🛍️", "goods": "🛍️", "live_rooms": "📺", "rooms": "📺", "live_comments": "💬", "comments": "💬", "cart": "🛒", "orders": "🧾", "users": "👥", "group_buys": "🔥", "coupons": "🎟️", "stores": "🏪", "suppliers": "🏭", "members": "💳", "skus": "📦", "posts": "📝", "deliveries": "🚚", "warehouses": "🏬", "brands": "🏷️", "customs": "🛃", "riders": "🛵", "categories": "🗂️", "reviews": "⭐"};
