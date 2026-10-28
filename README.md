@@ -1,27 +1,48 @@
-# 飞鲜生鲜电商
+# 🥬 飞鲜生鲜电商 (feixian-fresh)
 
-> 产地直发 · 明日鲜达
+> 新鲜直达，品质生活从飞鲜开始。
 
-零依赖（Python 标准库 + SQLite）的 飞鲜，飞系电商系列成员。
+## ✨ 项目简介
 
-## 运行
+飞鲜生鲜是一个专注于生鲜产品的电商平台，通过产地直采与全程冷链配送，确保每一份食材的新鲜与品质，为用户提供当日达的极速配送体验。
+
+## 🚀 核心特性
+
+- 🌾 **产地直采** — 深入源头产地，精选优质农产品
+- ❄️ **冷链配送** — 全程冷链运输，锁住新鲜与营养
+- ✅ **品质保证** — 严格品控体系，不合格产品绝不发出
+- 🚚 **当日达** — 极速配送，新鲜食材当日送达
+- 📱 **智能推荐** — 根据季节、偏好智能推荐当季食材
+- 🥩 **品类齐全** — 蔬果、肉禽、海鲜、乳品一站式购齐
+
+## 🛠️ 快速开始
 
 ```bash
-cd backend
-python server.py
-# 访问 http://127.0.0.1:8109/ ，三角色: admin/admin123 · ops01/ops123456 · view01/view123456
+# 克隆仓库
+git clone https://github.com/dukema81/feixian-fresh.git
+cd feixian-fresh
+
+# 安装依赖
+npm install
+
+# 启动开发服务器
+npm run dev
+
+# 构建生产版本
+npm run build
 ```
 
-## 测试
+## 📦 技术栈
 
-```bash
-python -m pytest tests/ -q
-```
+- 前端框架 + UI 组件库
+- 状态管理 + 路由
+- API 接口 + 数据库
+- 冷链物流追踪 + 支付集成
 
-## 目录
+## 📄 许可证
 
-- backend/  通用引擎 engine.py + 规格 spec.json + 服务入口 server.py
-- frontend/ 原生 JS SPA（门店 + 统计 + 规格驱动后台）
-- tools/    专属 Logo（icon.svg）+ UI 巡检（ui_check.py，零依赖探活+截图）
-- docs/     建设方案
-- tests/    API 集成测试（真实起服务全链路断言）
+本项目基于 [MIT License](LICENSE) 开源许可协议。
+
+---
+
+Made with ❤️ by dukema81
